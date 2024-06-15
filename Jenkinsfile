@@ -1,7 +1,7 @@
 pipeline {    
     agent {
         docker {
-            image 'maven:3.2.3-jdk-8-onbuild'
+            image 'adoptopenjdk/openjdk11'
             args '--user root -v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
