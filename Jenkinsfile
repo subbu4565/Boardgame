@@ -1,7 +1,7 @@
 pipeline {    
     agent {
         docker {
-            image 'maven'
+            image 'maven:3.9.7-amazoncorretto-11-debian-bookworm'
             
         }
     }
