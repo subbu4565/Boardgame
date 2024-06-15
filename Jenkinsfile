@@ -1,6 +1,9 @@
 pipeline {    
     agent {
-        docker { dockerfile true }
+        docker {
+            image 'adoptopenjdk/openjdk11'
+            
+        }
     }
 
     stages {   
